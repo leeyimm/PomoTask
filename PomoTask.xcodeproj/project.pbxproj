@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E14ED4A1A899EA500B5256E /* PomoHistroyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E14ED491A899EA500B5256E /* PomoHistroyListViewController.m */; };
+		2E14ED4D1A899EDB00B5256E /* PomoStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E14ED4C1A899EDB00B5256E /* PomoStatisticsViewController.m */; };
+		2E3672E81A8ECD4E0012666A /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3672E71A8ECD4E0012666A /* Utility.m */; };
+		2E3672EB1A8EF57C0012666A /* PomoOfDayViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3672EA1A8EF57C0012666A /* PomoOfDayViewCell.m */; };
+		2E3672EE1A8F490C0012666A /* CreatTestTaskAndPomo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3672ED1A8F490C0012666A /* CreatTestTaskAndPomo.m */; };
+		2E45BBAA1AADB348006DAFEC /* PomoTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E45BBA91AADB348006DAFEC /* PomoTask.m */; };
+		2E45BBAD1AADB698006DAFEC /* Pomo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E45BBAC1AADB698006DAFEC /* Pomo.m */; };
+		2E4F202C1A8848E100D0506E /* PomoCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F202B1A8848E100D0506E /* PomoCycleView.m */; };
+		2E4F202F1A88498300D0506E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4F202D1A88498300D0506E /* Main.storyboard */; };
+		2E4F20371A88558800D0506E /* PomoCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F20351A88558800D0506E /* PomoCycleViewController.m */; };
+		2E5203A31A8AEAC5008B6085 /* PomoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E5203A11A8AEAC5008B6085 /* PomoModel.xcdatamodeld */; };
+		2E5678351AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5678341AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.m */; };
+		2E5682591AA545CB00B4ABC9 /* PomoOfDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5682581AA545CB00B4ABC9 /* PomoOfDayViewController.m */; };
+		2E56825C1AA54C2700B4ABC9 /* PomoInPomosOfDayViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E56825B1AA54C2700B4ABC9 /* PomoInPomosOfDayViewCell.m */; };
+		2E56825F1AA5CC2000B4ABC9 /* PomoSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E56825E1AA5CC2000B4ABC9 /* PomoSettingViewController.m */; };
+		2E579BDF1A83769A009BDD2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E579BDE1A83769A009BDD2A /* main.m */; };
+		2E579BE21A83769A009BDD2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E579BE11A83769A009BDD2A /* AppDelegate.m */; };
+		2E579BE51A83769A009BDD2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E579BE41A83769A009BDD2A /* ViewController.m */; };
+		2E579BEA1A83769A009BDD2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E579BE91A83769A009BDD2A /* Images.xcassets */; };
+		2E579BED1A83769A009BDD2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E579BEB1A83769A009BDD2A /* LaunchScreen.xib */; };
+		2E579BF91A83769A009BDD2A /* PomoTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E579BF81A83769A009BDD2A /* PomoTaskTests.m */; };
+		2E579C041A83781D009BDD2A /* PomoToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E579C031A83781D009BDD2A /* PomoToDoListViewController.m */; };
+		2E579C071A8378FC009BDD2A /* AddPoTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E579C061A8378FC009BDD2A /* AddPoTaskViewController.m */; };
+		2E5848B51A9353CF00F809CE /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5848B41A9353CF00F809CE /* TaskDetailViewController.m */; };
+		2E7029951AA44A45002ADB75 /* PomoInTaskDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7029941AA44A45002ADB75 /* PomoInTaskDetailViewCell.m */; };
+		2EF30B851A8447C200B1616E /* PomoToDoListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF30B841A8447C200B1616E /* PomoToDoListViewCell.m */; };
+		2EF30B901A84BBAF00B1616E /* PomoCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF30B8F1A84BBAF00B1616E /* PomoCycle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E579BF31A83769A009BDD2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E579BD11A837699009BDD2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E579BD81A837699009BDD2A;
+			remoteInfo = PomoTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E14ED481A899EA500B5256E /* PomoHistroyListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoHistroyListViewController.h; sourceTree = "<group>"; };
+		2E14ED491A899EA500B5256E /* PomoHistroyListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoHistroyListViewController.m; sourceTree = "<group>"; };
+		2E14ED4B1A899EDB00B5256E /* PomoStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoStatisticsViewController.h; sourceTree = "<group>"; };
+		2E14ED4C1A899EDB00B5256E /* PomoStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoStatisticsViewController.m; sourceTree = "<group>"; };
+		2E3672E61A8ECD4E0012666A /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		2E3672E71A8ECD4E0012666A /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		2E3672E91A8EF57C0012666A /* PomoOfDayViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoOfDayViewCell.h; sourceTree = "<group>"; };
+		2E3672EA1A8EF57C0012666A /* PomoOfDayViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoOfDayViewCell.m; sourceTree = "<group>"; };
+		2E3672EC1A8F490C0012666A /* CreatTestTaskAndPomo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatTestTaskAndPomo.h; sourceTree = "<group>"; };
+		2E3672ED1A8F490C0012666A /* CreatTestTaskAndPomo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatTestTaskAndPomo.m; sourceTree = "<group>"; };
+		2E45BBA81AADB348006DAFEC /* PomoTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoTask.h; sourceTree = "<group>"; };
+		2E45BBA91AADB348006DAFEC /* PomoTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoTask.m; sourceTree = "<group>"; };
+		2E45BBAB1AADB698006DAFEC /* Pomo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pomo.h; sourceTree = "<group>"; };
+		2E45BBAC1AADB698006DAFEC /* Pomo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pomo.m; sourceTree = "<group>"; };
+		2E4F202A1A8848E100D0506E /* PomoCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoCycleView.h; sourceTree = "<group>"; };
+		2E4F202B1A8848E100D0506E /* PomoCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoCycleView.m; sourceTree = "<group>"; };
+		2E4F202E1A88498300D0506E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E4F20341A88558800D0506E /* PomoCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoCycleViewController.h; sourceTree = "<group>"; };
+		2E4F20351A88558800D0506E /* PomoCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoCycleViewController.m; sourceTree = "<group>"; };
+		2E5203A21A8AEAC5008B6085 /* PomoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PomoModel.xcdatamodel; sourceTree = "<group>"; };
+		2E5678331AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+ChangeFlag.h"; sourceTree = "<group>"; };
+		2E5678341AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+ChangeFlag.m"; sourceTree = "<group>"; };
+		2E5682571AA545CB00B4ABC9 /* PomoOfDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoOfDayViewController.h; sourceTree = "<group>"; };
+		2E5682581AA545CB00B4ABC9 /* PomoOfDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoOfDayViewController.m; sourceTree = "<group>"; };
+		2E56825A1AA54C2700B4ABC9 /* PomoInPomosOfDayViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoInPomosOfDayViewCell.h; sourceTree = "<group>"; };
+		2E56825B1AA54C2700B4ABC9 /* PomoInPomosOfDayViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoInPomosOfDayViewCell.m; sourceTree = "<group>"; };
+		2E56825D1AA5CC2000B4ABC9 /* PomoSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoSettingViewController.h; sourceTree = "<group>"; };
+		2E56825E1AA5CC2000B4ABC9 /* PomoSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoSettingViewController.m; sourceTree = "<group>"; };
+		2E579BD91A837699009BDD2A /* PomoTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomoTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E579BDD1A83769A009BDD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E579BDE1A83769A009BDD2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E579BE01A83769A009BDD2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2E579BE11A83769A009BDD2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2E579BE31A83769A009BDD2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2E579BE41A83769A009BDD2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2E579BE91A83769A009BDD2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E579BEC1A83769A009BDD2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2E579BF21A83769A009BDD2A /* PomoTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomoTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E579BF71A83769A009BDD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E579BF81A83769A009BDD2A /* PomoTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PomoTaskTests.m; sourceTree = "<group>"; };
+		2E579C021A83781D009BDD2A /* PomoToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoToDoListViewController.h; sourceTree = "<group>"; };
+		2E579C031A83781D009BDD2A /* PomoToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoToDoListViewController.m; sourceTree = "<group>"; };
+		2E579C051A8378FC009BDD2A /* AddPoTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPoTaskViewController.h; sourceTree = "<group>"; };
+		2E579C061A8378FC009BDD2A /* AddPoTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPoTaskViewController.m; sourceTree = "<group>"; };
+		2E5848B31A9353CF00F809CE /* TaskDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailViewController.h; sourceTree = "<group>"; };
+		2E5848B41A9353CF00F809CE /* TaskDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailViewController.m; sourceTree = "<group>"; };
+		2E7029931AA44A45002ADB75 /* PomoInTaskDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoInTaskDetailViewCell.h; sourceTree = "<group>"; };
+		2E7029941AA44A45002ADB75 /* PomoInTaskDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoInTaskDetailViewCell.m; sourceTree = "<group>"; };
+		2EF30B831A8447C200B1616E /* PomoToDoListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoToDoListViewCell.h; sourceTree = "<group>"; };
+		2EF30B841A8447C200B1616E /* PomoToDoListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoToDoListViewCell.m; sourceTree = "<group>"; };
+		2EF30B8E1A84BBAF00B1616E /* PomoCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoCycle.h; sourceTree = "<group>"; };
+		2EF30B8F1A84BBAF00B1616E /* PomoCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoCycle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E579BD61A837699009BDD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E579BEF1A83769A009BDD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E14ED471A899E6300B5256E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E4F20341A88558800D0506E /* PomoCycleViewController.h */,
+				2E4F20351A88558800D0506E /* PomoCycleViewController.m */,
+				2E579C021A83781D009BDD2A /* PomoToDoListViewController.h */,
+				2E579C031A83781D009BDD2A /* PomoToDoListViewController.m */,
+				2E579C051A8378FC009BDD2A /* AddPoTaskViewController.h */,
+				2E579C061A8378FC009BDD2A /* AddPoTaskViewController.m */,
+				2E14ED481A899EA500B5256E /* PomoHistroyListViewController.h */,
+				2E14ED491A899EA500B5256E /* PomoHistroyListViewController.m */,
+				2E14ED4B1A899EDB00B5256E /* PomoStatisticsViewController.h */,
+				2E14ED4C1A899EDB00B5256E /* PomoStatisticsViewController.m */,
+				2E5848B31A9353CF00F809CE /* TaskDetailViewController.h */,
+				2E5848B41A9353CF00F809CE /* TaskDetailViewController.m */,
+				2E5682571AA545CB00B4ABC9 /* PomoOfDayViewController.h */,
+				2E5682581AA545CB00B4ABC9 /* PomoOfDayViewController.m */,
+				2E56825D1AA5CC2000B4ABC9 /* PomoSettingViewController.h */,
+				2E56825E1AA5CC2000B4ABC9 /* PomoSettingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2E579BD01A837699009BDD2A = {
+			isa = PBXGroup;
+			children = (
+				2E579BDB1A837699009BDD2A /* PomoTask */,
+				2E579BF51A83769A009BDD2A /* PomoTaskTests */,
+				2E579BDA1A837699009BDD2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E579BDA1A837699009BDD2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E579BD91A837699009BDD2A /* PomoTask.app */,
+				2E579BF21A83769A009BDD2A /* PomoTaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E579BDB1A837699009BDD2A /* PomoTask */ = {
+			isa = PBXGroup;
+			children = (
+				2E579BE01A83769A009BDD2A /* AppDelegate.h */,
+				2E579BE11A83769A009BDD2A /* AppDelegate.m */,
+				2E4F202D1A88498300D0506E /* Main.storyboard */,
+				2E14ED471A899E6300B5256E /* Controller */,
+				2EF30B8D1A84BA5600B1616E /* View */,
+				2EF30B8C1A84BA1200B1616E /* Model */,
+				2E579BE91A83769A009BDD2A /* Images.xcassets */,
+				2E579BDC1A837699009BDD2A /* Supporting Files */,
+			);
+			path = PomoTask;
+			sourceTree = "<group>";
+		};
+		2E579BDC1A837699009BDD2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E579BEB1A83769A009BDD2A /* LaunchScreen.xib */,
+				2E579BE31A83769A009BDD2A /* ViewController.h */,
+				2E579BE41A83769A009BDD2A /* ViewController.m */,
+				2E579BDD1A83769A009BDD2A /* Info.plist */,
+				2E579BDE1A83769A009BDD2A /* main.m */,
+				2E3672E61A8ECD4E0012666A /* Utility.h */,
+				2E3672E71A8ECD4E0012666A /* Utility.m */,
+				2E3672EC1A8F490C0012666A /* CreatTestTaskAndPomo.h */,
+				2E3672ED1A8F490C0012666A /* CreatTestTaskAndPomo.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E579BF51A83769A009BDD2A /* PomoTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E579BF81A83769A009BDD2A /* PomoTaskTests.m */,
+				2E579BF61A83769A009BDD2A /* Supporting Files */,
+			);
+			path = PomoTaskTests;
+			sourceTree = "<group>";
+		};
+		2E579BF61A83769A009BDD2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E579BF71A83769A009BDD2A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EF30B8C1A84BA1200B1616E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EF30B8E1A84BBAF00B1616E /* PomoCycle.h */,
+				2EF30B8F1A84BBAF00B1616E /* PomoCycle.m */,
+				2E5203A11A8AEAC5008B6085 /* PomoModel.xcdatamodeld */,
+				2E45BBAB1AADB698006DAFEC /* Pomo.h */,
+				2E45BBAC1AADB698006DAFEC /* Pomo.m */,
+				2E45BBA81AADB348006DAFEC /* PomoTask.h */,
+				2E45BBA91AADB348006DAFEC /* PomoTask.m */,
+				2E5678331AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.h */,
+				2E5678341AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2EF30B8D1A84BA5600B1616E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E4F202A1A8848E100D0506E /* PomoCycleView.h */,
+				2E4F202B1A8848E100D0506E /* PomoCycleView.m */,
+				2EF30B831A8447C200B1616E /* PomoToDoListViewCell.h */,
+				2EF30B841A8447C200B1616E /* PomoToDoListViewCell.m */,
+				2E3672E91A8EF57C0012666A /* PomoOfDayViewCell.h */,
+				2E3672EA1A8EF57C0012666A /* PomoOfDayViewCell.m */,
+				2E7029931AA44A45002ADB75 /* PomoInTaskDetailViewCell.h */,
+				2E7029941AA44A45002ADB75 /* PomoInTaskDetailViewCell.m */,
+				2E56825A1AA54C2700B4ABC9 /* PomoInPomosOfDayViewCell.h */,
+				2E56825B1AA54C2700B4ABC9 /* PomoInPomosOfDayViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E579BD81A837699009BDD2A /* PomoTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E579BFC1A83769A009BDD2A /* Build configuration list for PBXNativeTarget "PomoTask" */;
+			buildPhases = (
+				2E579BD51A837699009BDD2A /* Sources */,
+				2E579BD61A837699009BDD2A /* Frameworks */,
+				2E579BD71A837699009BDD2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PomoTask;
+			productName = PomoTask;
+			productReference = 2E579BD91A837699009BDD2A /* PomoTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E579BF11A83769A009BDD2A /* PomoTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E579BFF1A83769A009BDD2A /* Build configuration list for PBXNativeTarget "PomoTaskTests" */;
+			buildPhases = (
+				2E579BEE1A83769A009BDD2A /* Sources */,
+				2E579BEF1A83769A009BDD2A /* Frameworks */,
+				2E579BF01A83769A009BDD2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E579BF41A83769A009BDD2A /* PBXTargetDependency */,
+			);
+			name = PomoTaskTests;
+			productName = PomoTaskTests;
+			productReference = 2E579BF21A83769A009BDD2A /* PomoTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E579BD11A837699009BDD2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Ying;
+				TargetAttributes = {
+					2E579BD81A837699009BDD2A = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = MV658E5Q72;
+					};
+					2E579BF11A83769A009BDD2A = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = MV658E5Q72;
+						TestTargetID = 2E579BD81A837699009BDD2A;
+					};
+				};
+			};
+			buildConfigurationList = 2E579BD41A837699009BDD2A /* Build configuration list for PBXProject "PomoTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E579BD01A837699009BDD2A;
+			productRefGroup = 2E579BDA1A837699009BDD2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E579BD81A837699009BDD2A /* PomoTask */,
+				2E579BF11A83769A009BDD2A /* PomoTaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E579BD71A837699009BDD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4F202F1A88498300D0506E /* Main.storyboard in Resources */,
+				2E579BED1A83769A009BDD2A /* LaunchScreen.xib in Resources */,
+				2E579BEA1A83769A009BDD2A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E579BF01A83769A009BDD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E579BD51A837699009BDD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E14ED4D1A899EDB00B5256E /* PomoStatisticsViewController.m in Sources */,
+				2EF30B901A84BBAF00B1616E /* PomoCycle.m in Sources */,
+				2E4F20371A88558800D0506E /* PomoCycleViewController.m in Sources */,
+				2E45BBAA1AADB348006DAFEC /* PomoTask.m in Sources */,
+				2E7029951AA44A45002ADB75 /* PomoInTaskDetailViewCell.m in Sources */,
+				2E579BE51A83769A009BDD2A /* ViewController.m in Sources */,
+				2EF30B851A8447C200B1616E /* PomoToDoListViewCell.m in Sources */,
+				2E56825C1AA54C2700B4ABC9 /* PomoInPomosOfDayViewCell.m in Sources */,
+				2E45BBAD1AADB698006DAFEC /* Pomo.m in Sources */,
+				2E579BE21A83769A009BDD2A /* AppDelegate.m in Sources */,
+				2E3672EE1A8F490C0012666A /* CreatTestTaskAndPomo.m in Sources */,
+				2E5678351AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.m in Sources */,
+				2E5682591AA545CB00B4ABC9 /* PomoOfDayViewController.m in Sources */,
+				2E3672EB1A8EF57C0012666A /* PomoOfDayViewCell.m in Sources */,
+				2E3672E81A8ECD4E0012666A /* Utility.m in Sources */,
+				2E5203A31A8AEAC5008B6085 /* PomoModel.xcdatamodeld in Sources */,
+				2E14ED4A1A899EA500B5256E /* PomoHistroyListViewController.m in Sources */,
+				2E4F202C1A8848E100D0506E /* PomoCycleView.m in Sources */,
+				2E56825F1AA5CC2000B4ABC9 /* PomoSettingViewController.m in Sources */,
+				2E579C071A8378FC009BDD2A /* AddPoTaskViewController.m in Sources */,
+				2E579BDF1A83769A009BDD2A /* main.m in Sources */,
+				2E5848B51A9353CF00F809CE /* TaskDetailViewController.m in Sources */,
+				2E579C041A83781D009BDD2A /* PomoToDoListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E579BEE1A83769A009BDD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E579BF91A83769A009BDD2A /* PomoTaskTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E579BF41A83769A009BDD2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E579BD81A837699009BDD2A /* PomoTask */;
+			targetProxy = 2E579BF31A83769A009BDD2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E4F202D1A88498300D0506E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E4F202E1A88498300D0506E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E579BEB1A83769A009BDD2A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E579BEC1A83769A009BDD2A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E579BFA1A83769A009BDD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E579BFB1A83769A009BDD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E579BFD1A83769A009BDD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PomoTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		2E579BFE1A83769A009BDD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PomoTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		2E579C001A83769A009BDD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PomoTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PomoTask.app/PomoTask";
+			};
+			name = Debug;
+		};
+		2E579C011A83769A009BDD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PomoTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PomoTask.app/PomoTask";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E579BD41A837699009BDD2A /* Build configuration list for PBXProject "PomoTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E579BFA1A83769A009BDD2A /* Debug */,
+				2E579BFB1A83769A009BDD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E579BFC1A83769A009BDD2A /* Build configuration list for PBXNativeTarget "PomoTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E579BFD1A83769A009BDD2A /* Debug */,
+				2E579BFE1A83769A009BDD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E579BFF1A83769A009BDD2A /* Build configuration list for PBXNativeTarget "PomoTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E579C001A83769A009BDD2A /* Debug */,
+				2E579C011A83769A009BDD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2E5203A11A8AEAC5008B6085 /* PomoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E5203A21A8AEAC5008B6085 /* PomoModel.xcdatamodel */,
+			);
+			currentVersion = 2E5203A21A8AEAC5008B6085 /* PomoModel.xcdatamodel */;
+			path = PomoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2E579BD11A837699009BDD2A /* Project object */;
+}
