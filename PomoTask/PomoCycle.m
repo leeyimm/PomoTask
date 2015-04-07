@@ -26,10 +26,10 @@ NSString *const SecondTickNotification = @"SecondTick";
 +(instancetype)sharedPomoCycle
 {
     static PomoCycle *pomoCycle = nil;
-    if (!pomoCycle) {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
         pomoCycle = [[self alloc] initPrivate];
-    }
-
+    });
     return pomoCycle;
 }
 

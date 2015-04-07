@@ -94,7 +94,7 @@
         if (buttonIndex==1) {
             self.pomoCycle.pomo.endTime = [NSDate date];
             self.pomoCycle.bindTask.interruptedPomo+=1;
-            self.pomoCycle.pomo.isPartial = [NSNumber numberWithInt:1 ];
+            self.pomoCycle.pomo.isPartial = YES;
             [self.pomoCycle.bindTask addPomosObject:self.pomoCycle.pomo];
             //[self enableBackAndSettingButton:YES];
             self.pomoCycle.pomo =nil;
@@ -217,7 +217,7 @@
     
     self.pomoCycle.pomo.endTime = [[NSDate alloc] initWithTimeInterval:self.pomoCycle.durationTimeInSecond sinceDate:self.pomoCycle.pomo.startTime];
     self.pomoCycle.bindTask.consumedPomo+=1;
-    self.pomoCycle.pomo.isPartial = [NSNumber numberWithInt:0 ];
+    self.pomoCycle.pomo.isPartial = NO;
     [self.task addPomosObject:self.pomoCycle.pomo];
     self.pomoCycle.pomo=nil;
 
@@ -317,6 +317,7 @@
 -(void)creatPomo{
     if (!self.pomoCycle.pomo) {
         self.pomoCycle.pomo = (Pomo *)[NSEntityDescription insertNewObjectForEntityForName:@"Pomo" inManagedObjectContext:self.managedObjectContext];
+        NSLog(@"create a new Pomo");
     }
     //self.pomoCycle.pomo=self.pomo;
     self.pomoCycle.pomo.PomoTask=self.pomoCycle.bindTask;

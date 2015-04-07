@@ -16,6 +16,7 @@
 @property  (nonatomic) NSMutableArray *pomos;
 
 @property (nonatomic) NSMutableArray *dates;
+@property  (nonatomic) NSDate *lastRetrieveDate;
 
 @end
 
@@ -37,12 +38,21 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    if ([self.managedObjectContext managedObjectContextChanged]||self.managedObjectContext.hasChanges) {
+    if (![[self.managedObjectContext lastModifyDate] isEqualToDate:self.lastRetrieveDate]||self.managedObjectContext.hasChanges)
+    {
         [self.managedObjectContext save:nil];
+        self.lastRetrieveDate = [NSDate date];
+        [self.managedObjectContext setLastModifyDate:self.lastRetrieveDate];
         [self retrivePomos];
         [self.tableView reloadData];
     }
-    //NSLog(@"statistics view will appear");
+    //NSLog(@"view will appear");
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    //NSLog(@"view will disappear");
 }
 
 - (void)retrivePomos{
@@ -108,7 +118,7 @@
     int partialPomoCount =0;
     for (Pomo *pomo in self.pomos) {
         if ([pomo.date isEqualToString:self.dates[indexPath.row]]) {
-            if ([pomo.isPartial intValue] == 0) {
+            if (pomo.isPartial == NO ) {
                 fullPomoCount+=1;
             }else{
                 partialPomoCount+=1;

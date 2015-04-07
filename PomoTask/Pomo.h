@@ -15,7 +15,7 @@
 
 @property (nonatomic, retain) NSString * date;
 @property (nonatomic, retain) NSDate * endTime;
-@property (nonatomic, retain) NSNumber * isPartial;
+@property (nonatomic) BOOL  isPartial;
 @property (nonatomic, retain) NSDate * startTime;
 @property (nonatomic, retain) PomoTask *pomoTask;
 

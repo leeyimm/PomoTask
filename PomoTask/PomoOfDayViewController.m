@@ -34,7 +34,7 @@
     for (Pomo *pomo in self.pomos) {
         timeInterval += [pomo.endTime timeIntervalSinceDate:pomo.startTime];
         
-        if ([pomo.isPartial intValue] == 0) {
+        if (pomo.isPartial == NO) {
             fullPomoCount+=1;
         }else{
             partialPomoCount+=1;
@@ -89,7 +89,7 @@
     
     //[dateFormatter setDateFormat:@"MM-dd"];
     //NSString *dueDateString = [dateFormatter stringFromDate:task.dueDate];
-    if ([pomo.isPartial intValue] == 1) {
+    if (pomo.isPartial == YES) {
         cell.pomoImage.image = [UIImage imageNamed:@"Pomodoro_Interrupted.png"];
     }else
     {

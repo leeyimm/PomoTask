@@ -15,6 +15,7 @@
 @interface PomoHistroyListViewController ()
 
 @property  (nonatomic) NSMutableArray* completedTasks;
+@property (nonatomic) NSDate *lastRetrieveDate;
 
 @end
 
@@ -35,13 +36,21 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    if ([self.managedObjectContext managedObjectContextChanged]||self.managedObjectContext.hasChanges)
+    if (![[self.managedObjectContext lastModifyDate] isEqualToDate:self.lastRetrieveDate]||self.managedObjectContext.hasChanges)
     {
         [self.managedObjectContext save:nil];
+        self.lastRetrieveDate = [NSDate date];
+        [self.managedObjectContext setLastModifyDate:self.lastRetrieveDate];
         [self retriveCompletedTasks];
         [self.tableView reloadData];
     }
-    //NSLog(@"histroy view will disapper");
+   // NSLog(@"view will appear");
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    //NSLog(@"view will disappear");
 }
 
 -(void)retriveCompletedTasks{

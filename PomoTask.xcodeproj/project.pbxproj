@@ -14,11 +14,11 @@
 		2E3672EE1A8F490C0012666A /* CreatTestTaskAndPomo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3672ED1A8F490C0012666A /* CreatTestTaskAndPomo.m */; };
 		2E45BBAA1AADB348006DAFEC /* PomoTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E45BBA91AADB348006DAFEC /* PomoTask.m */; };
 		2E45BBAD1AADB698006DAFEC /* Pomo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E45BBAC1AADB698006DAFEC /* Pomo.m */; };
+		2E4B6D9C1AB468F600CDA1F3 /* NSManagedObjectContext+LastModifyDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B6D9B1AB468F600CDA1F3 /* NSManagedObjectContext+LastModifyDate.m */; };
 		2E4F202C1A8848E100D0506E /* PomoCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F202B1A8848E100D0506E /* PomoCycleView.m */; };
 		2E4F202F1A88498300D0506E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4F202D1A88498300D0506E /* Main.storyboard */; };
 		2E4F20371A88558800D0506E /* PomoCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F20351A88558800D0506E /* PomoCycleViewController.m */; };
 		2E5203A31A8AEAC5008B6085 /* PomoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E5203A11A8AEAC5008B6085 /* PomoModel.xcdatamodeld */; };
-		2E5678351AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5678341AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.m */; };
 		2E5682591AA545CB00B4ABC9 /* PomoOfDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5682581AA545CB00B4ABC9 /* PomoOfDayViewController.m */; };
 		2E56825C1AA54C2700B4ABC9 /* PomoInPomosOfDayViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E56825B1AA54C2700B4ABC9 /* PomoInPomosOfDayViewCell.m */; };
 		2E56825F1AA5CC2000B4ABC9 /* PomoSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E56825E1AA5CC2000B4ABC9 /* PomoSettingViewController.m */; };
@@ -61,14 +61,14 @@
 		2E45BBA91AADB348006DAFEC /* PomoTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoTask.m; sourceTree = "<group>"; };
 		2E45BBAB1AADB698006DAFEC /* Pomo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pomo.h; sourceTree = "<group>"; };
 		2E45BBAC1AADB698006DAFEC /* Pomo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pomo.m; sourceTree = "<group>"; };
+		2E4B6D9A1AB468F600CDA1F3 /* NSManagedObjectContext+LastModifyDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+LastModifyDate.h"; sourceTree = "<group>"; };
+		2E4B6D9B1AB468F600CDA1F3 /* NSManagedObjectContext+LastModifyDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+LastModifyDate.m"; sourceTree = "<group>"; };
 		2E4F202A1A8848E100D0506E /* PomoCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoCycleView.h; sourceTree = "<group>"; };
 		2E4F202B1A8848E100D0506E /* PomoCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoCycleView.m; sourceTree = "<group>"; };
 		2E4F202E1A88498300D0506E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E4F20341A88558800D0506E /* PomoCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoCycleViewController.h; sourceTree = "<group>"; };
 		2E4F20351A88558800D0506E /* PomoCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoCycleViewController.m; sourceTree = "<group>"; };
 		2E5203A21A8AEAC5008B6085 /* PomoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PomoModel.xcdatamodel; sourceTree = "<group>"; };
-		2E5678331AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+ChangeFlag.h"; sourceTree = "<group>"; };
-		2E5678341AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+ChangeFlag.m"; sourceTree = "<group>"; };
 		2E5682571AA545CB00B4ABC9 /* PomoOfDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoOfDayViewController.h; sourceTree = "<group>"; };
 		2E5682581AA545CB00B4ABC9 /* PomoOfDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomoOfDayViewController.m; sourceTree = "<group>"; };
 		2E56825A1AA54C2700B4ABC9 /* PomoInPomosOfDayViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomoInPomosOfDayViewCell.h; sourceTree = "<group>"; };
@@ -218,8 +218,8 @@
 				2E45BBAC1AADB698006DAFEC /* Pomo.m */,
 				2E45BBA81AADB348006DAFEC /* PomoTask.h */,
 				2E45BBA91AADB348006DAFEC /* PomoTask.m */,
-				2E5678331AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.h */,
-				2E5678341AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.m */,
+				2E4B6D9A1AB468F600CDA1F3 /* NSManagedObjectContext+LastModifyDate.h */,
+				2E4B6D9B1AB468F600CDA1F3 /* NSManagedObjectContext+LastModifyDate.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -354,7 +354,6 @@
 				2E45BBAD1AADB698006DAFEC /* Pomo.m in Sources */,
 				2E579BE21A83769A009BDD2A /* AppDelegate.m in Sources */,
 				2E3672EE1A8F490C0012666A /* CreatTestTaskAndPomo.m in Sources */,
-				2E5678351AAAEAE5006A2343 /* NSManagedObjectContext+ChangeFlag.m in Sources */,
 				2E5682591AA545CB00B4ABC9 /* PomoOfDayViewController.m in Sources */,
 				2E3672EB1A8EF57C0012666A /* PomoOfDayViewCell.m in Sources */,
 				2E3672E81A8ECD4E0012666A /* Utility.m in Sources */,
@@ -364,6 +363,7 @@
 				2E56825F1AA5CC2000B4ABC9 /* PomoSettingViewController.m in Sources */,
 				2E579C071A8378FC009BDD2A /* AddPoTaskViewController.m in Sources */,
 				2E579BDF1A83769A009BDD2A /* main.m in Sources */,
+				2E4B6D9C1AB468F600CDA1F3 /* NSManagedObjectContext+LastModifyDate.m in Sources */,
 				2E5848B51A9353CF00F809CE /* TaskDetailViewController.m in Sources */,
 				2E579C041A83781D009BDD2A /* PomoToDoListViewController.m in Sources */,
 			);
@@ -495,6 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -508,6 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

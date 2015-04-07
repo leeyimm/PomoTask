@@ -55,7 +55,8 @@
     }
     
     [self.tableView reloadData];
-    [self.managedObjectContext setManagedObjectContextChanged:NO];
+    //[self.managedObjectContext setManagedObjectContextChanged:NO];
+    //NSLog(@"view will apper");
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -66,9 +67,9 @@
     
     if (self.managedObjectContext.hasChanges) {
         [self.managedObjectContext save:nil];
-        [self.managedObjectContext setManagedObjectContextChanged:YES];
+        [self.managedObjectContext setLastModifyDate:[NSDate date]];
     }
-    //NSLog(@"ToDoList will disapper");
+    //NSLog(@"view will disapper");
 }
 
 
@@ -288,8 +289,7 @@
         
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         
-        [self.managedObjectContext setManagedObjectContextChanged:YES];
-        // Commit the change.
+        [self.managedObjectContext setLastModifyDate:[NSDate date]];
         NSError *error;
         if (![self.managedObjectContext save:&error]) {
             // Replace this implementation with code to handle the error appropriately.
@@ -299,6 +299,8 @@
         }
     }
 }
+
+
 
 
 

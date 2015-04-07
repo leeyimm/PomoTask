@@ -11,7 +11,7 @@
 #import "PomoHistroyListViewController.h"
 #import "PomoToDoListViewController.h"
 #import "PomoStatisticsViewController.h"
-#import "NSManagedObjectContext+ChangeFlag.h"
+#import "NSManagedObjectContext+LastModifyDate.h"
 #import "Utility.h"
 #import "CreatTestTaskAndPomo.h"
 
@@ -47,9 +47,12 @@ static NSString *kEnterBackgroundDateKey = @"EnterBackgroundDate";
     
     
     _historyNavController = [storyboard instantiateViewControllerWithIdentifier:@"History nav controller"];
+    
     PomoHistroyListViewController *historyViewController =
     (PomoHistroyListViewController *)[_historyNavController topViewController];
     historyViewController.managedObjectContext = self.managedObjectContext;
+    historyViewController.tabBarItem.image = [UIImage imageNamed:@"completed.png"];
+    historyViewController.tabBarItem.title = @"Completed";
     //dataSource = [[ElementsSortedByNameDataSource alloc] init];
     //viewController.dataSource = dataSource;
     
@@ -60,11 +63,15 @@ static NSString *kEnterBackgroundDateKey = @"EnterBackgroundDate";
     //dataSource = [[ElementsSortedByNameDataSource alloc] init];
     //viewController.dataSource = dataSource;
     todayViewController.managedObjectContext = self.managedObjectContext;
+    todayViewController.tabBarItem.image = [UIImage imageNamed:@"todo.png"];
+    todayViewController.tabBarItem.title = @"Today";
     [viewControllers addObject:todayNavController];
     
     UINavigationController *statisticsNavController = [storyboard instantiateViewControllerWithIdentifier:@"Statistics nav controller"];
     PomoStatisticsViewController *statisticsViewController = (PomoStatisticsViewController *)[statisticsNavController topViewController];
     statisticsViewController.managedObjectContext = self.managedObjectContext;
+    statisticsViewController.tabBarItem.image = [UIImage imageNamed:@"statistics.png"];
+    statisticsViewController.tabBarItem.title = @"Statistics";
     
     [viewControllers addObject:statisticsNavController];
     
@@ -160,7 +167,7 @@ static NSString *kEnterBackgroundDateKey = @"EnterBackgroundDate";
     if (pomoCycle.pomoStatus == FOCUS) {
         pomoCycle.pomo.endTime = [NSDate date];
         pomoCycle.bindTask.interruptedPomo+=1;
-        pomoCycle.pomo.isPartial = [NSNumber numberWithInt:1 ];
+        pomoCycle.pomo.isPartial = YES;
         [pomoCycle.bindTask addPomosObject:pomoCycle.pomo];
         pomoCycle.pomo =nil;
     }
