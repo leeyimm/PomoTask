@@ -7,9 +7,14 @@
 //
 #import "Pomo.h"
 #import <Foundation/Foundation.h>
+<<<<<<< HEAD
 #import "PomoTask.h"
+
+=======
+#import "Pomo.h"
 #import "PomoTask.h"
-#import "PomoTask.h"
+>>>>>>> another test
+
 #define     INVALID 0
 #define     READY  1
 #define     FOCUS 2
