@@ -5,10 +5,10 @@
 //  Created by Ying on 2/6/15.
 //  Copyright (c) 2015 Ying. All rights reserved.
 //
-
+#import "Pomo.h"
 #import <Foundation/Foundation.h>
 #import "PomoTask.h"
-#import "Pomo.h"
+
 
 #define     INVALID 0
 #define     READY  1
